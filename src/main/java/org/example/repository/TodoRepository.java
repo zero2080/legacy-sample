@@ -22,4 +22,8 @@ public class TodoRepository {
   public void save(Todo todo) {
     sessionTemplate.insert("save",todo);
   }
+
+  public void delete(int id) {
+    sessionTemplate.delete("delete",id);
+  }
 }

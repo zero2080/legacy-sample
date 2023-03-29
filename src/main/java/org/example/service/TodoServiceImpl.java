@@ -24,4 +24,9 @@ public class TodoServiceImpl implements TodoService{
   public void save(Todo todo){
     repository.save(todo);
   }
+
+  public void delete(int id) {
+    repository.delete(id);
+  }
+
 }

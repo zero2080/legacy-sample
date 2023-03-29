@@ -49,4 +49,10 @@ public class MainController {
   public void save(@RequestBody Todo todo){
     service.save(todo);
   }
+
+  @RequestMapping(method=RequestMethod.DELETE,value="/id/{id}")
+  @ResponseStatus(HttpStatus.OK)
+  public void delete(@PathVariable int id){
+    service.delete(id);
+  }
 }
